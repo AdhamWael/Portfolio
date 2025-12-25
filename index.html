@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adham Eldeeb — Creative Web Developer & Designer</title>
+    <meta name="description"
+        content="Based in Egypt, Adham Eldeeb is a creative web developer specializing in high-end frontend experiences, modern UI/UX, and immersive interactive design.">
+    <meta name="keywords"
+        content="Adham Eldeeb, Creative Web Developer, Frontend Engineer, UI Designer, Egypt Web Dev, Portfolio 2024, React Developer">
+    <meta name="author" content="Adham Eldeeb">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourportfolio.com/">
+    <meta property="og:title" content="Adham Eldeeb — Creative Web Developer & Designer">
+    <meta property="og:description"
+        content="Crafting immersive digital experiences through clean code and innovative design. Explore my latest work.">
+    <meta property="og:image" content="https://yourportfolio.com/Wide.jpg">
+
+
+    <meta name="theme-color" content="#c4d600">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Page loader: shows an animated "Adham Eldeeb" until content is ready -->
+    <div id="page-loader" class="page-loader" aria-hidden="false">
+        <div class="loader-inner">
+            <div class="loader-text" aria-hidden="true">
+                <span class="loader-letter">A</span>
+                <span class="loader-letter">d</span>
+                <span class="loader-letter">h</span>
+                <span class="loader-letter">a</span>
+                <span class="loader-letter">m</span>
+                <span class="loader-space">&nbsp;</span>
+                <span class="loader-letter">E</span>
+                <span class="loader-letter">l</span>
+                <span class="loader-letter">d</span>
+                <span class="loader-letter">e</span>
+                <span class="loader-letter">e</span>
+                <span class="loader-letter">b</span>
+            </div>
+            <div class="loader-bar" aria-hidden="true"></div>
+        </div>
+    </div>
+    <header class="site-header reveal-element" id="home">
+        <div class="header-progress-bar"></div>
+        <div class="logo-wrapper">
+            <a href="index.html" class="logo-link">Adham Eldeeb</a>
+            <div class="header-info-row">
+                <div class="availability-status">
+                    <span class="status-dot"></span>
+                    <span class="status-text">Available</span>
+                </div>
+                <span class="header-time-divider">|</span>
+                <div class="header-local-time">
+                    <span class="nav-time">19:35</span>
+                </div>
+            </div>
+        </div>
+
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="main-nav">
+            <div class="nav-links-wrapper">
+                <div class="magnetic-wrap"><a href="#selectedWork" class="nav-link">Work <span
+                            class="nav-count">03</span></a></div>
+                <div class="magnetic-wrap"><a href="#about" class="nav-link">About</a></div>
+                <div class="magnetic-wrap"><a href="#services" class="nav-link">Services</a></div>
+            </div>
+            <div class="magnetic-wrap">
+                <a href="#contact" class="nav-cta-pill">
+                    <span>Let's talk</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="hero-section">
+        <div class="hero-background-v2">
+            <div class="mesh-gradient"></div>
+            <div class="grid-overlay"></div>
+            <div class="noise-overlay"></div>
+        </div>
+        <div class="hero-image-container reveal-element">
+            <img src="download.png" alt="Web Developer" class="hero-image" id="heroImage">
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title reveal-element" id="heroTitle">
+                <span class="line line-1">WEB</span>
+                <span class="line line-2">DEVEL</span>
+                <span class="line line-3">OPER</span>
+                <span class="line line-4"></span>
+            </h1>
+
+            <div class="hero-description-container reveal-element">
+                <div class="hero-description">
+                    <div class="hero-card-header">
+                        <span class="card-tag">Freelance</span>
+                        <div class="card-status">
+                            <span class="pulse-dot"></span>
+                            <span class="status-msg">Available for hire</span>
+                        </div>
+                    </div>
+                    <div class="arrow-icon">↘</div>
+                    <p id="heroDescription">
+                        A freelance web developer based in Egypt.
+                        Specializing in modern frontend technologies and creative coding,
+                        I build immersive and performant web experiences.
+                    </p>
+                    <div class="hero-card-footer">
+                        <a href="#projects" class="explore-btn">See Projects</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-indicators" id="carouselIndicators">
+            <span class="indicator active" data-index="0"></span>
+            <span class="indicator" data-index="1"></span>
+            <span class="indicator" data-index="2"></span>
+        </div>
+    </main>
+
+    <!-- Selected Work Section -->
+    <section class="selected-work" id="selectedWork">
+        <div class="section-header reveal-on-scroll" id="selectedWorkHeader">
+            <h2>Selected Work</h2>
+            <span class="work-count">(03)</span>
+        </div>
+        <div class="project-list">
+            <!-- Project Image Hover Container -->
+            <div class="project-hover-container" id="projectHoverContainer">
+                <img src="" alt="Project Preview" id="projectHoverImage">
+            </div>
+
+            <div class="project-item reveal-on-scroll" data-image="Wide.jpg">
+                <div class="project-item-left">
+                    <span class="project-number">01</span>
+                    <h3 class="project-title">E-Commerce Platform</h3>
+                </div>
+                <div class="project-item-right">
+                    <div class="project-tags">
+                        <span>React</span>
+                        <span>Next.js</span>
+                    </div>
+                    <span class="project-category">Web Design / Dev</span>
+                </div>
+            </div>
+            <div class="project-item reveal-on-scroll" data-image="darris.jpg">
+                <div class="project-item-left">
+                    <span class="project-number">02</span>
+                    <h3 class="project-title">Real Estate </br> Website</h3>
+                </div>
+                <div class="project-item-right">
+                    <div class="project-tags">
+                        <span>Webflow</span>
+                        <span>GSAP</span>
+                    </div>
+                    <span class="project-category">Development</span>
+                </div>
+            </div>
+            <div class="project-item reveal-on-scroll" data-image="Wide.jpg">
+                <div class="project-item-left">
+                    <span class="project-number">03</span>
+                    <h3 class="project-title">Interactive </br> Learning Website</h3>
+                </div>
+                <div class="project-item-right">
+                    <div class="project-tags">
+                        <span>UI/UX</span>
+                        <span>Motion</span>
+                    </div>
+                    <span class="project-category">Branding / Dev</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="archive-link-container reveal-on-scroll">
+            <a href="#" class="view-all-btn">
+                <span>View Full Archive</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!--The Process-->
+    <section class="process-section" id="process">
+        <div class="section-header reveal-on-scroll">
+            <h2>Process</h2>
+            <span class="work-count">(The Workflow)</span>
+        </div>
+
+        <div class="process-content-wrapper">
+            <div class="process-intro">
+                <p class="lead-text">
+                    A structured methodology designed to transform complex problems into
+                    refined digital solutions through iterative strategy and technical excellence.
+                </p>
+            </div>
+
+            <div class="process-grid">
+                <div class="process-step reveal-on-scroll">
+                    <span class="step-num">01</span>
+                    <div class="step-content">
+                        <h3>Strategy</h3>
+                        <p>Defining core objectives and user personas for digital success.</p>
+                    </div>
+                </div>
+
+                <div class="process-step reveal-on-scroll">
+                    <span class="step-num">02</span>
+                    <div class="step-content">
+                        <h3>Design</h3>
+                        <p>Immersive UI/UX focusing on minimalism and premium aesthetics.</p>
+                    </div>
+                </div>
+
+                <div class="process-step reveal-on-scroll">
+                    <span class="step-num">03</span>
+                    <div class="step-content">
+                        <h3>Code</h3>
+                        <p>High-performance frontend code using modern tech stacks.</p>
+                    </div>
+                </div>
+
+                <div class="process-step reveal-on-scroll">
+                    <span class="step-num">04</span>
+                    <div class="step-content">
+                        <h3>Optimization</h3>
+                        <p>Performance tuning and SEO for a flawless launch.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="section-header reveal-on-scroll" id="aboutHeader">
+            <h2>About</h2>
+            <span class="work-count">(The Creator)</span>
+        </div>
+
+        <div class="about-grid">
+            <div class="about-main-content reveal-on-scroll">
+                <div class="about-intro">
+                    <p class="lead-text">
+                        A multidisciplinary developer and designer crafting high-end digital experiences that merge
+                        technical precision with creative vision.
+                    </p>
+                    <div class="about-description">
+                        <p>
+                            Based in Cairo, I bridge the gap between aesthetics and functionality. I believe the web is
+                            more than just a tool—it's a canvas for storytelling and human connection.
+                        </p>
+                        <p>
+                            My approach combines a deep understanding of frontend engineering with a keen eye for
+                            minimalist design, ensuring every pixel serves a purpose and every interaction feels
+                            intuitive.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="about-philosophy reveal-on-scroll">
+                    <div class="philosophy-item">
+                        <span class="phi-num">01</span>
+                        <div class="phi-text">
+                            <h4>Design with Purpose</h4>
+                            <p>Every element should solve a problem or enhance the user's journey.</p>
+                        </div>
+                    </div>
+                    <div class="philosophy-item">
+                        <span class="phi-num">02</span>
+                        <div class="phi-text">
+                            <h4>Build for Performance</h4>
+                            <p>Speed and clean code are the foundation of a premium web experience.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--
+                <div class="skills-showcase reveal-on-scroll">
+                    <h3 class="subsection-title">Core Expertise</h3>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <span>Frontend Development</span>
+                            <span>UI/UX Design</span>
+                            <span>Creative Coding</span>
+                        </div>
+                        <div class="skill-category">
+                            <span>React / Next.js</span>
+                            <span>Motion Design</span>
+                            <span>Brand Identity</span>
+                        </div>
+                    </div>
+                </div>
+                -->
+
+            </div>
+
+            <div class="about-media reveal-on-scroll">
+                <div class="about-image-wrapper">
+                    <img src="3.jpg" alt="Adham Eldeeb Portrait" class="about-portrait">
+                    <div class="image-overlay-text">ADHAM ELDEEB</div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">03+</span>
+                        <span class="stat-label">Years of Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">20+</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="section-header reveal-on-scroll" id="contactHeader">
+            <h2>Get in touch</h2>
+            <span class="work-count">(Contact)</span>
+        </div>
+
+        <div class="contact-grid">
+            <div class="contact-info reveal-on-scroll">
+                <div class="contact-text-block">
+                    <p class="contact-lead">
+                        Have a project in mind? Let's build something great together.
+                    </p>
+                    <div class="availability-badge">
+                        <span class="dot"></span> Available for new projects
+                    </div>
+                </div>
+
+                <div class="contact-methods">
+                    <div class="contact-method-item">
+                        <span class="method-label">Email me</span>
+                        <a href="mailto:adhameldeeb2015@hotmail.com" class="email-link">adhameldeeb2015@hotmail.com</a>
+                    </div>
+
+                    <div class="contact-method-item">
+                        <span class="method-label">Location</span>
+                        <p class="location-text">Cairo, Egypt / Remote Worldwide</p>
+                    </div>
+                </div>
+
+                <div class="social-wrapper">
+                    <span class="method-label">Social</span>
+                    <div class="social-links-grid">
+                        <a href="#" class="social-item">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="https://github.com/AdhamWael" class="social-item">
+                            <i class="fab fa-github"></i>
+                            <span>Github</span>
+                        </a>
+                        <a href="#" class="social-item">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-wrapper reveal-on-scroll">
+                <div class="form-container">
+                    <div class="form-header">
+                        <h3>Send a Message</h3>
+                        <p>I usually respond within 24 hours.</p>
+                    </div>
+                    <form action="https://api.web3forms.com/submit" method="POST" id="contactForm" class="modern-form">
+                        <!-- Web3Forms Access Key - Replace with your own key if needed -->
+                        <input type="hidden" name="access_key" value="fee915b9-9253-410b-8b21-8c69e0fb5b58">
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" name="name" id="name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" placeholder="john@example.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" name="subject" id="subject" placeholder="Project Inquiry">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" rows="5" placeholder="Tell me about your project..."
+                                required></textarea>
+                        </div>
+                        <div id="form-status"></div>
+                        <button type="submit" class="submit-btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--
+    <section class="pricing-section" id="pricing">
+        <div class="section-header reveal-on-scroll" id="pricingHeader">
+            <h2>Pricing</h2>
+            <span class="work-count">($)</span>
+        </div>
+        <div class="pricing-grid reveal-on-scroll">
+            <div class="pricing-card">
+                <div class="card-header">
+                    <h3>Basic</h3>
+                    <p class="price">$999</p>
+                    <p class="description">Perfect for personal portfolios and small landing pages.</p>
+                </div>
+                <ul class="features-list">
+                    <li>One Page Design</li>
+                    <li>Mobile Responsive</li>
+                    <li>Basic SEO</li>
+                    <li>Contact Form</li>
+                    <li>1 Week Support</li>
+                </ul>
+                <a href="#contact" class="btn-pricing">Get Started</a>
+            </div>
+            <div class="pricing-card featured">
+                <div class="card-header">
+                    <h3>Standard</h3>
+                    <p class="price">$2,499</p>
+                    <p class="description">Ideal for small businesses and startups.</p>
+                </div>
+                <ul class="features-list">
+                    <li>Up to 5 Pages</li>
+                    <li>CMS Integration</li>
+                    <li>Advanced SEO</li>
+                    <li>Analytics Setup</li>
+                    <li>1 Month Support</li>
+                </ul>
+                <a href="#contact" class="btn-pricing">Get Started</a>
+            </div>
+            <div class="pricing-card">
+                <div class="card-header">
+                    <h3>Premium</h3>
+                    <p class="price">$4,999+</p>
+                    <p class="description">For complex web applications and e-commerce.</p>
+                </div>
+                <ul class="features-list">
+                    <li>Custom Web App</li>
+                    <li>E-commerce Functionality</li>
+                    <li>User Authentication</li>
+                    <li>Database Integration</li>
+                    <li>3 Months Support</li>
+                </ul>
+                <a href="#contact" class="btn-pricing">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="estimate-section" id="estimate">
+        <div class="section-header reveal-on-scroll" id="estimateHeader">
+            <h2>Estimate</h2>
+            <span class="work-count">(CALC)</span>
+        </div>
+        <div class="estimate-container reveal-on-scroll">
+            <div class="estimate-form">
+                <h3>Calculate Your Project</h3>
+                <form id="estimateForm">
+                    <div class="form-group">
+                        <label for="projectType">Project Type</label>
+                        <select id="projectType" title="Select project type">
+                            <option value="1000">Landing Page ($1,000)</option>
+                            <option value="2500">Corporate Website ($2,500)</option>
+                            <option value="5000">E-commerce ($5,000)</option>
+                            <option value="8000">Web Application ($8,000)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="pageCount">Number of Pages</label>
+                        <input type="range" id="pageCount" min="1" max="20" value="1" title="Select number of pages">
+                        <span id="pageValue">1 Page</span> (+$100/page)
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <label>
+                            <input type="checkbox" value="500" class="addon">
+                            CMS Integration (+$500)
+                        </label>
+                        <label>
+                            <input type="checkbox" value="300" class="addon">
+                            SEO Optimization (+$300)
+                        </label>
+                        <label>
+                            <input type="checkbox" value="200" class="addon">
+                            Dark Mode (+$200)
+                        </label>
+                    </div>
+                    <div class="total-estimate">
+                        <span>Estimated Cost:</span>
+                        <span id="totalCost">$1,100</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="policy-section" id="policy">
+        <div class="section-header reveal-on-scroll" id="policyHeader">
+            <h2>Policy</h2>
+            <span class="work-count">(RULES)</span>
+        </div>
+        <div class="policy-content reveal-on-scroll">
+            <div class="policy-column">
+                <h3>Invoices</h3>
+                <p>Invoices are issued upon project milestones. A 50% deposit is required to commence work, with the
+                    remaining 50% due upon project completion and approval.</p>
+            </div>
+            <div class="policy-column">
+                <h3>Payment Methods</h3>
+                <p>We accept bank transfers, credit cards (via Stripe), and PayPal. All payments must be made within 14
+                    days of the invoice date.</p>
+            </div>
+            <div class="policy-column">
+                <h3>Revisions</h3>
+                <p>Two rounds of revisions are included in each package. Additional revisions will be charged at an
+                    hourly rate of $100/hr.</p>
+            </div>
+        </div>
+    </section>
+-->
+    <section id="services" class="services-section-wrapper">
+        <div class="services-section">
+            <div class="section-header reveal-on-scroll" id="servicesHeader">
+                <h2>Services</h2>
+                <span class="work-count">(What I Do)</span>
+            </div>
+            <div class="services-list">
+                <div class="service-item reveal-on-scroll">
+                    <div class="service-header-main">
+                        <span class="service-icon">
+                            <i class="fas fa-bezier-curve"></i>
+                        </span>
+                        <div class="service-title-group">
+                            <h3 class="service-title">Web Design</h3>
+                            <p class="service-short-desc">Aesthetic digital experiences.</p>
+                        </div>
+                        <div class="service-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="service-details">
+                        <div class="service-details-content">
+                            <p>Crafting visually compelling and user-centric digital interfaces that tell your brand's
+                                unique story through modern aesthetics and purposeful design.</p>
+                            <div class="service-tags">
+                                <span>Art Direction</span>
+                                <span>Visual Storytelling</span>
+                                <span>Responsive Layouts</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-item reveal-on-scroll">
+                    <div class="service-header-main">
+                        <span class="service-icon">
+                            <i class="fas fa-code"></i>
+                        </span>
+                        <div class="service-title-group">
+                            <h3 class="service-title">Development</h3>
+                            <p class="service-short-desc">High-performance solutions.</p>
+                        </div>
+                        <div class="service-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="service-details">
+                        <div class="service-details-content">
+                            <p>Building high-performance, scalable web applications with clean code and cutting-edge
+                                technologies. Focused on speed, security, and accessibility.</p>
+                            <div class="service-tags">
+                                <span>React / Next.js</span>
+                                <span>Custom Code</span>
+                                <span>API Integration</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-item reveal-on-scroll">
+                    <div class="service-header-main">
+                        <span class="service-icon">
+                            <i class="fas fa-user-astronaut"></i>
+                        </span>
+                        <div class="service-title-group">
+                            <h3 class="service-title">UI/UX Design</h3>
+                            <p class="service-short-desc">User-centered interfaces.</p>
+                        </div>
+                        <div class="service-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="service-details">
+                        <div class="service-details-content">
+                            <p>Designing intuitive user journeys and interfaces that prioritize accessibility and
+                                seamless interaction across all devices and platforms.</p>
+                            <div class="service-tags">
+                                <span>User Research</span>
+                                <span>Prototyping</span>
+                                <span>Design Systems</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-item reveal-on-scroll">
+                    <div class="service-header-main">
+                        <span class="service-icon">
+                            <i class="fas fa-fire"></i>
+                        </span>
+                        <div class="service-title-group">
+                            <h3 class="service-title">Branding</h3>
+                            <p class="service-short-desc">Cohesive visual identity.</p>
+                        </div>
+                        <div class="service-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="service-details">
+                        <div class="service-details-content">
+                            <p>Creating cohesive visual identities that resonate with your audience and build lasting
+                                brand authority through strategic design and storytelling.</p>
+                            <div class="service-tags">
+                                <span>Logo Design</span>
+                                <span>Color Schemes</span>
+                                <span>Brand Strategy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <div class="footer-background-wrapper">
+        <footer class="site-footer">
+            <div class="footer-top">
+                <div class="footer-slogan reveal-on-scroll">
+                    <h2 class="massive-text1 line-11">Designed with class.</h2>
+                    <h2 class="massive-text1 line-12">Built to last.</h2>
+                </div>
+                <div class="footer-cta-container reveal-on-scroll">
+                    <a href="#contact" class="big-cta-link">Start a Project <span class="arrow-right">↗</span></a>
+                </div>
+            </div>
+
+            <div class="footer-main">
+                <div class="footer-column info-col">
+                    <div class="footer-logo">Adham Eldeeb</div>
+                    <p class="footer-tagline">Designing experiences that resonate. Building solutions that last.</p>
+                    <div class="dynamic-clock" id="footerClock">
+                        <span class="clock-label">Local Time:</span>
+                        <span class="clock-time">00:00:00</span>
+                        <span class="location">Cairo, EG</span>
+                    </div>
+                </div>
+
+                <div class="footer-nav-groups">
+                    <div class="footer-column">
+                        <h3 class="footer-label">Navigation</h3>
+                        <nav class="footer-nav">
+                            <a href="#selectedWork">Work</a>
+                            <a href="#about">About</a>
+                            <a href="#services">Services</a>
+                            <a href="#contact">Contact</a>
+                        </nav>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3 class="footer-label">Social</h3>
+                        <nav class="footer-nav">
+                            <a href="#" target="_blank"> <i class="fab fa-instagram"></i> Instagram</a>
+                            <a href="#" target="_blank"> <i class="fab fa-linkedin"></i> LinkedIn</a>
+                            <a href="https://github.com/AdhamWael" target="_blank"> <i class="fab fa-github"></i>
+                                Github</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2025 Adham Eldeeb. Credits to inspiration.</p>
+                </div>
+                <div class="back-to-top-wrapper">
+                    <a href="#home" class="back-to-top">
+                        <span>Back to top</span>
+                        <div class="circle-arrow">
+                            <i class="fas fa-arrow-up"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Project Modal -->
+    <div class="modal-overlay" id="projectModal">
+        <div class="modal-content">
+            <header class="modal-project-hero">
+                <div class="modal-hero-top">
+                    <span class="modal-category" id="modalCategory">Category</span>
+                    <h2 class="modal-title" id="modalTitle">Project Title</h2>
+                </div>
+                <div class="modal-image-container">
+                    <img src="" alt="" class="modal-image" id="modalImage1">
+                </div>
+            </header>
+
+            <div class="modal-project-body">
+                <div class="modal-intro">
+                    <p class="modal-description" id="modalDescription">
+                        Project description goes here. This is a placeholder for the actual project details.
+                    </p>
+                </div>
+
+                <div class="project-case-study">
+                    <aside class="modal-sidebar">
+                        <div class="modal-block">
+                            <h3 class="modal-label">Client</h3>
+                            <p class="modal-text" id="modalClientText">Fashion Brand Co.</p>
+                        </div>
+                        <div class="modal-block">
+                            <h3 class="modal-label">Role</h3>
+                            <p class="modal-text" id="modalRoleText">Frontend Developer<br>UI Designer</p>
+                        </div>
+                        <div class="modal-block">
+                            <h3 class="modal-label">Link</h3>
+                            <a href="#" class="visit-project-btn" id="modalLinkBtn">Visit Site ↗</a>
+                        </div>
+                    </aside>
+
+                    <main class="modal-main">
+                        <div class="modal-section">
+                            <h3 class="modal-label">The Challenge</h3>
+                            <p class="modal-text" id="modalChallengeText">
+                                Detailed challenge description...
+                            </p>
+                        </div>
+                        <div class="modal-section">
+                            <h3 class="modal-label">The Solution</h3>
+                            <p class="modal-text" id="modalSolutionText">
+                                Detailed solution description...
+                            </p>
+                        </div>
+                        <div class="modal-gallery">
+                            <img src="" alt="Detail View" class="modal-image2" id="modalImage2">
+                        </div>
+                    </main>
+                </div>
+
+                <footer class="modal-footer">
+                    <div class="modal-footer-line"></div>
+                    <button class="close-project-btn">Close Case Study</button>
+                </footer>
+            </div>
+        </div>
+        <button class="close-button" aria-label="Close modal">&times;</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
